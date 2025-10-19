@@ -1,0 +1,15 @@
+[project]
+name = "tonks"
+version = "0.1.0"
+description = "Tonks video game"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["esper>=3.4", "pygame-ce>=2.5.6"]
+
+[dependency-groups]
+dev = ["pyinstaller>=6.16.0", "pytest>=8.4.2"]
+
+
+# [project.scripts]
+# tonkers = "tonks.tonkers.main:main"
+# tonkers_server = "tonks.tonkers_server.main:main"
