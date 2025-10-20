@@ -6,7 +6,7 @@ import pygame
 from tonks.common.components import  Position,  Turret, Weapon
 from tonks.common.entities import spawn_bullet
 
-POO_SOUND_FILE_PATH = pathlib.Path("assets", "sfx", "byron-voice-poo-1.wav")
+POO_SOUND_FILE_PATH = pathlib.Path("assets", "sfx", "pew.wav")
 
 class WeaponSystem(esper.Processor):
     def __init__(self):
