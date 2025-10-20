@@ -18,11 +18,15 @@ from tonks.common.systems.weapon_system import WeaponSystem
 def open_window(window_size: Tuple[int, int]):
     try:
         pygame.init()
+        pygame.mixer.init()
         screen = pygame.display.set_mode(window_size)
         yield screen
     finally:
+        if pygame.mixer.get_init() is not None:
+            pygame.mixer.quit()
         if pygame.get_init():
             pygame.quit()
+
 
 def main():
     with open_window((1920, 1080)) as screen:
